@@ -1,0 +1,15 @@
+ol {
+  color: Darkslategray;
+}
+
+a{
+  color: blue;
+}
+
+a:hover{
+  color: red;
+}
+
+a:hover{
+  color: green;
+}

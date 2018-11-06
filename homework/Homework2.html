@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Pie Chart</title>
+      <script src="jquery.js"></script>
+      <script src="Chart.js"></script>
+  </head>
+  <body>
+    <canvas id="mycanvas" width="256" height="256"></canvas>
+    <script>
+      $(document).ready(function)(){
+          var ctx = $("#mycanvas").get(0).getContext("2");
+          //pie chart data
+          //sum of values = 360
+          var data = [
+            {
+                value: 90
+                color: "red"
+                highlight: "red"
+                label: "red"
+            },
+            {
+                value: 90
+                color: Yellow
+                hightlight: "Yellow"
+                label: "Yellow"
+            },
+            {
+                value: 90
+                color: "blue"
+                highlight:"blue"
+                label: "blue"
+            },
+            {
+                value: 90
+                color: "Green"
+                highlight: "green"
+                label: "green"
+            }
+          ];
+          //draw
+          var piechart = new chart(ctx). Pie(data);
+        });
+        </script>
+    </body>
+</html>
